@@ -1,17 +1,22 @@
 <template>
   <v-row class="container-navbar">
-    <v-col cols="11" md="6" class="d-flex align-center botao-inicio">
+    <v-col cols="10" md="6" class="d-flex align-center botao-inicio">
       <nuxt-link class="ml-3" to="/">
         iBicos
       </nuxt-link>
     </v-col>
 
-    <v-col class="d-flex justify-space-around" cols="1" md="6">
-      <div v-for="item in items" :key="item.text" class="d-none d-md-flex">
+    <v-col class="d-flex justify-space-around" cols="2" md="6">
+      <v-btn
+        v-for="item in items"
+        :key="item.text"
+        text
+        class="d-none d-md-flex"
+      >
         <nuxt-link :to="`/${item.link}`">
           {{ item.text }}
         </nuxt-link>
-      </div>
+      </v-btn>
 
       <v-menu bottom left>
         <template #activator="{ on, attrs }">
@@ -22,16 +27,20 @@
             v-bind="attrs"
             v-on="on"
           >
-            <v-icon>mdi-menu</v-icon>
+            <v-icon class="botao-inicio">
+              mdi-menu
+            </v-icon>
           </v-btn>
         </template>
 
-        <v-list>
+        <v-list class="menu">
           <v-list-item v-for="item in items" :key="item.text">
             <v-list-item-title>
-              <nuxt-link :to="`/${item.link}`">
-                {{ item.text }}
-              </nuxt-link>
+              <v-btn text active-class="link-ativo">
+                <nuxt-link :to="`/${item.link}`">
+                  {{ item.text }}
+                </nuxt-link>
+              </v-btn>
             </v-list-item-title>
           </v-list-item>
         </v-list>
@@ -62,15 +71,21 @@ export default {
 <style lang="scss" scoped>
 .container-navbar {
   .botao-inicio {
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: bolder;
   }
-  a {
-    text-decoration: none;
-    color: #006064;
-    font-weight: bold;
-    &:hover {
-      color: #1ebbc0;
-    }
-  }
+}
+
+.menu {
+  background-color: #effffe;
+}
+a {
+  text-decoration: none;
+  color: #006064;
+  font-weight: bold;
+}
+
+.link-ativo{
+  color: #29d0d6;
 }
 </style>

@@ -1,22 +1,26 @@
 <template>
   <div>
     <div class="container-inicial">
-      <v-container>
+      <v-container class="imagem-fundo">
         <h1>
           Uma plataforma voltada para
           <span class="texto-destaque">prestadores de serviços</span> e pessoas
           em <span class="texto-destaque">busca de profissionais</span>.
         </h1>
 
-        <div class="my-3">
-          <v-btn large color="#00656D" medium class="mt-2 mr-2">
-            <span style="color: #fff">Buscar bicos</span>
-          </v-btn>
+        <v-row class="my-2">
+          <v-col cols="7" sm="7">
+            <v-btn large color="#00656D" medium>
+              <span style="color: #fff">Buscar bicos</span>
+            </v-btn>
+          </v-col>
 
-          <v-btn large outlined medium class="mt-2">
-            Postar bicos
-          </v-btn>
-        </div>
+          <v-col cols="7" sm="7">
+            <v-btn large outlined medium>
+              Postar bicos
+            </v-btn>
+          </v-col>
+        </v-row>
       </v-container>
     </div>
   </div>
@@ -31,11 +35,21 @@ export default {}
 
 .container-inicial {
   background-color: #effffe;
-  background-image: url('@assets/imagens/banner.svg');
-  height: 45vh;
+  /* background-image: url("~assets/imagens/banner.svg");
+  background-position-y: 170px;
+  background-position-x: 150px; */
+  .imagem-fundo {
+    background-image: url("~assets/imagens/banner.svg");
+    background-position-y: 170px;
+    background-position-x: 180px;
+    height: 100%;
+  }
+  height: 65vh;
   h1 {
-    font-size: 25px;
-    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    width: 80%;
     font-family: "Anton", sans-serif;
     color: rgb(71, 71, 71);
   }
@@ -45,12 +59,44 @@ export default {}
   color: #00656d;
 }
 
-@media only screen and (min-width: 600px) {
-.container-inicial{
-  h1 {
-    width: 50%;
-    margin-top: 40px;
+@media (min-width: 320px) {
+  .container-inicial {
+    .imagem-fundo {
+      background-position-y: 130px;
+      background-position-x: 170px;
+    }
   }
 }
+
+@media (min-width: 480px) {
+  .container-inicial {
+    .imagem-fundo {
+      background-position-y: 40px;
+      background-position-x: 170px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+   .container-inicial {
+    .imagem-fundo {
+      background-position-y: 40px;
+      background-position-x: 270px;
+    }
+  }
+}
+@media (min-width: 801px) {
+    .container-inicial {
+    .imagem-fundo {
+      background-position-y: 40px;
+      background-position-x: right;
+    }
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }
 </style>
