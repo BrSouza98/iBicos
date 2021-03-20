@@ -1,5 +1,5 @@
 <template>
-  <v-row class="container-navbar">
+  <v-row class="container-navbar d-flex justify-center align-center">
     <v-col cols="10" md="6" class="d-flex align-center botao-inicio">
       <nuxt-link class="ml-3" to="/">
         iBicos
@@ -77,7 +77,7 @@ export default {
 }
 
 .menu {
-  background-color: #effffe;
+  background-color: #f5fffe;
 }
 a {
   text-decoration: none;

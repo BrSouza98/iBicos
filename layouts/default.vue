@@ -2,7 +2,7 @@
   <!-- App.vue -->
 
   <v-app>
-    <v-app-bar color="#effffe" flat app>
+    <v-app-bar color="#F5FFFE" height="80px" elevate-on-scroll app>
       <Navbar />
     </v-app-bar>
     <v-main>
