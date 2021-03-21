@@ -6,8 +6,8 @@
           <h1>
             Uma plataforma voltada para
             <span class="texto-destaque">prestadores de serviços</span> e
-            pessoas em
-            <span class="texto-destaque">busca de profissionais</span>.
+            <span class="texto-destaque">clientes</span>
+            em busca de profissionais.
           </h1>
         </v-col>
       </v-row>
@@ -27,10 +27,10 @@
     </v-container>
 
     <v-container fluid class="quem-somos">
-      <v-container class="texto-container d-flex justify-center">
-        <v-row class="d-flex justify-center mx-5 px-5">
-          <v-col cols="12">
-            <h2>
+      <v-container class="texto-container d-flex justify-center my-4 py-5">
+        <v-row class="d-flex justify-center">
+          <v-col cols="12" class="mb-4">
+            <h2 class="text-center">
               Oque é iBicos?
             </h2>
           </v-col>
@@ -44,11 +44,109 @@
               demanda? Para isso surgiu a iBicos, conhecemos e sabemos das
               dificuldades de ambos os lados, logo, nosso objetivo é fazer o
               meio de campo entre o cliente que precisa ter seu problema
-              solucionado e o prestador de serviço disposto a novos desafios!
+              solucionado e o prestador de serviços disposto a assumir novos
+              desafios!
             </p>
           </v-col>
         </v-row>
       </v-container>
+    </v-container>
+
+    <v-container fluid class="sobre-como-funciona">
+      <v-row class="my-5">
+        <v-col cols="12">
+          <h2>E como funciona?</h2>
+        </v-col>
+
+        <v-col cols="12" md="6">
+          <div
+            class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+          >
+            <div class="sobre-texto-container">
+              <h4>Cadastre-se</h4>
+              <p>
+                Crie sua conta de forma rápida e gratis, você só precisa de um
+                email ativo e garantir uma senha segura.
+              </p>
+            </div>
+
+            <div class="sobre-imagem-container">
+              <v-icon color="white" size="150">
+                mdi-text-box-plus
+              </v-icon>
+            </div>
+          </div>
+        </v-col>
+
+        <v-col cols="12" md="6">
+          <div
+            class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+          >
+            <div class="sobre-imagem-container order-md-2">
+              <v-icon color="white" size="150">
+                mdi-format-paint
+              </v-icon>
+            </div>
+            <div class="sobre-texto-container">
+              <h4>Publique seu Bico</h4>
+              <p>
+                Hora de nos contar sobre oque precisa, você pode sobre o bico
+                bem como qual o tipo de profissional que precisa, quantos, o
+                prazo e claro, o valor orçamentado.
+              </p>
+            </div>
+          </div>
+        </v-col>
+
+        <v-col cols="12" md="6">
+          <div
+            class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+          >
+            <div class="sobre-texto-container">
+              <h4>Analise as propostas</h4>
+              <p>
+                Assim que postado, seu bico vai para o topo da lista! Todos os
+                prestadores de serviço disponiveis poderão se candidatar
+                <span
+                  class="d-none d-sm-inline"
+                >enviando o tempo, experiencias com qual cumprira o bico, isso
+                  claro, sendo compátiveis com a média estipulada</span>.
+              </p>
+            </div>
+
+            <div class="sobre-imagem-container">
+              <v-icon color="white" size="150">
+                mdi-text-search
+              </v-icon>
+            </div>
+          </div>
+        </v-col>
+
+        <v-col cols="12" md="6">
+          <div
+            class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+          >
+            <div class="sobre-imagem-container order-md-2">
+              <v-icon color="white" size="150">
+                mdi-handshake
+              </v-icon>
+            </div>
+
+            <div class="sobre-texto-container">
+              <h4>Acordo fechado</h4>
+
+              <p>
+                Encontrou a pessoa ideal para o trampo? Parabéns! Agora é só
+                aprovar o candidato ideal para o bico<span
+                  class="d-none d-sm-inline"
+                >
+                  , nossa plataforma disponibilizará um chat para que possam
+                  conversar melhor</span>.
+              </p>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -67,8 +165,8 @@ export default {}
   box-sizing: border-box;
 
   background-image: url("~assets/imagens/banner.svg");
-  background-position-y: bottom;
-  background-position-x: 150px;
+  background-position-y: 25vh;
+  background-position-x: 45vw;
   h1 {
     font-family: "Anton", sans-serif;
     color: rgb(70, 70, 70);
@@ -86,6 +184,14 @@ export default {}
       background-position: center;
       min-height: 200px;
     }
+  }
+}
+
+.sobre-como-funciona {
+  background-color: #263238;
+  color: #f0f0f0;
+  .sobre-texto-container {
+    width: 65%;
   }
 }
 
