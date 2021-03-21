@@ -15,3 +15,9 @@
     </v-footer>
   </v-app>
 </template>
+
+<style lang="scss" scoped>
+  *, *:before, *:after {
+  box-sizing: inherit;
+}
+</style>
