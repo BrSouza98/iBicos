@@ -28,11 +28,11 @@
 
     <v-container fluid class="quem-somos">
       <v-container class="texto-container d-flex justify-center my-4 py-5">
-        <v-row class="d-flex justify-center">
-          <v-col cols="12" class="mb-4">
-            <h2 class="text-center">
+        <v-row class="d-flex justify-center align-center">
+          <v-col cols="12" class="my-5">
+            <h1 class="text-center">
               Oque é iBicos?
-            </h2>
+            </h1>
           </v-col>
 
           <v-col class="imagem" cols="12" md="6" order-md="2" />
@@ -53,112 +53,170 @@
     </v-container>
 
     <v-container fluid class="sobre-como-funciona">
-      <v-row class="my-5">
-        <v-col cols="12">
-          <h2>E como funciona?</h2>
-        </v-col>
+      <v-container>
+        <v-row class="my-5">
+          <v-col class="my-3" cols="12">
+            <h1 class="text-center">
+              E como funciona?
+            </h1>
+          </v-col>
 
-        <v-col cols="12" md="6">
-          <div
-            class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+          <v-col cols="12" md="6" class="my-2">
+            <div
+              class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+            >
+              <div class="sobre-texto-container">
+                <h4>Cadastre-se</h4>
+                <p>
+                  Crie sua conta de forma rápida e gratis, você só precisa de um
+                  email ativo e garantir uma senha segura.
+                </p>
+              </div>
+
+              <div class="sobre-imagem-container">
+                <v-icon color="white" size="150">
+                  mdi-text-box-plus
+                </v-icon>
+              </div>
+            </div>
+          </v-col>
+
+          <v-col cols="12" md="6" class="my-2">
+            <div
+              class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+            >
+              <div class="sobre-imagem-container order-md-2">
+                <v-icon color="white" size="150">
+                  mdi-format-paint
+                </v-icon>
+              </div>
+              <div class="sobre-texto-container">
+                <h4>Publique seu Bico</h4>
+                <p>
+                  Hora de nos contar sobre oque precisa, você pode sobre o bico
+                  bem como qual o tipo de profissional que precisa, quantos, o
+                  prazo e claro, o valor orçamentado.
+                </p>
+              </div>
+            </div>
+          </v-col>
+
+          <v-col cols="12" md="6" class="my-2">
+            <div
+              class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+            >
+              <div class="sobre-texto-container">
+                <h4>Analise as propostas</h4>
+                <p>
+                  Assim que postado, seu bico vai para o topo da lista! Todos os
+                  prestadores de serviço disponiveis poderão se candidatar
+                  <span
+                    class="d-none d-sm-inline"
+                  >enviando o tempo, experiencias com qual cumprira o bico,
+                    isso claro, sendo compátiveis com a média estipulada</span>.
+                </p>
+              </div>
+
+              <div class="sobre-imagem-container">
+                <v-icon color="white" size="150">
+                  mdi-text-search
+                </v-icon>
+              </div>
+            </div>
+          </v-col>
+
+          <v-col cols="12" md="6" class="my-2">
+            <div
+              class="sobre-texto-imagem-container d-flex justify-space-around align-center"
+            >
+              <div class="sobre-imagem-container order-md-2">
+                <v-icon color="white" size="150">
+                  mdi-handshake
+                </v-icon>
+              </div>
+
+              <div class="sobre-texto-container">
+                <h4>Acordo fechado</h4>
+
+                <p>
+                  Encontrou a pessoa ideal para o trampo? Parabéns! Agora é só
+                  aprovar o candidato ideal para o bico<span
+                    class="d-none d-sm-inline"
+                  >
+                    , nossa plataforma disponibilizará um chat para que possam
+                    conversar melhor</span>.
+                </p>
+              </div>
+            </div>
+          </v-col>
+
+          <v-col cols="12" class="d-flex justify-center my-5 py-5">
+            <v-btn outlined color="white">
+              Desejo publicar um Bico!
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-container>
+
+    <v-container fluid class="principais-categorias">
+      <v-container>
+        <v-row class="d-flex justify-center my-5 py-5">
+          <h1 class="text-center my-5 py-5">
+            Procurando um bico?
+          </h1>
+        </v-row>
+
+        <v-row>
+          <v-col
+            v-for="categoria in categorias"
+            :key="categoria.text"
+            cols="12"
+            md="6"
+            lg="4"
           >
-            <div class="sobre-texto-container">
-              <h4>Cadastre-se</h4>
-              <p>
-                Crie sua conta de forma rápida e gratis, você só precisa de um
-                email ativo e garantir uma senha segura.
-              </p>
-            </div>
-
-            <div class="sobre-imagem-container">
-              <v-icon color="white" size="150">
-                mdi-text-box-plus
-              </v-icon>
-            </div>
-          </div>
-        </v-col>
-
-        <v-col cols="12" md="6">
-          <div
-            class="sobre-texto-imagem-container d-flex justify-space-around align-center"
-          >
-            <div class="sobre-imagem-container order-md-2">
-              <v-icon color="white" size="150">
-                mdi-format-paint
-              </v-icon>
-            </div>
-            <div class="sobre-texto-container">
-              <h4>Publique seu Bico</h4>
-              <p>
-                Hora de nos contar sobre oque precisa, você pode sobre o bico
-                bem como qual o tipo de profissional que precisa, quantos, o
-                prazo e claro, o valor orçamentado.
-              </p>
-            </div>
-          </div>
-        </v-col>
-
-        <v-col cols="12" md="6">
-          <div
-            class="sobre-texto-imagem-container d-flex justify-space-around align-center"
-          >
-            <div class="sobre-texto-container">
-              <h4>Analise as propostas</h4>
-              <p>
-                Assim que postado, seu bico vai para o topo da lista! Todos os
-                prestadores de serviço disponiveis poderão se candidatar
-                <span
-                  class="d-none d-sm-inline"
-                >enviando o tempo, experiencias com qual cumprira o bico, isso
-                  claro, sendo compátiveis com a média estipulada</span>.
-              </p>
-            </div>
-
-            <div class="sobre-imagem-container">
-              <v-icon color="white" size="150">
-                mdi-text-search
-              </v-icon>
-            </div>
-          </div>
-        </v-col>
-
-        <v-col cols="12" md="6">
-          <div
-            class="sobre-texto-imagem-container d-flex justify-space-around align-center"
-          >
-            <div class="sobre-imagem-container order-md-2">
-              <v-icon color="white" size="150">
-                mdi-handshake
-              </v-icon>
-            </div>
-
-            <div class="sobre-texto-container">
-              <h4>Acordo fechado</h4>
-
-              <p>
-                Encontrou a pessoa ideal para o trampo? Parabéns! Agora é só
-                aprovar o candidato ideal para o bico<span
-                  class="d-none d-sm-inline"
-                >
-                  , nossa plataforma disponibilizará um chat para que possam
-                  conversar melhor</span>.
-              </p>
-            </div>
-          </div>
-        </v-col>
-      </v-row>
+            <v-card width="100%">
+              <v-img
+                height="300px"
+                gradient="to top right, rgba(59,75,75,.35), rgba(32,32,32,.7)"
+                :src="require(`~/assets/imagens/${categoria.img}.jpg`)"
+                class="d-flex align-center card-imagem"
+              >
+                <nuxt-link class="card-titulo" to="/">
+                  <v-card-title class="text-center justify-center card-titulo">
+                    {{ categoria.text }}
+                  </v-card-title>
+                </nuxt-link>
+              </v-img>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-container>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      categorias: [
+        { img: 'pintura', text: 'Pintura' },
+        { img: 'faxina', text: 'Faxina' },
+        { img: 'pedreiro', text: 'Pedreiro(a)' },
+        { img: 'encanador', text: 'Encanador(a)' },
+        { img: 'eletricista', text: 'Eletricista' },
+        { img: 'banho-e-tosa', text: 'Banho e Tosa' }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-/* Conceito de mobile first, as configurações são feitas especificamente para mobile e adapt
+/* Conceito de mobile first, as configurações são feitas especificamente para mobile e
    adaptado para as telas maiores */
 .container-inicial {
   background-color: #f5fffe;
@@ -171,18 +229,21 @@ export default {}
     font-family: "Anton", sans-serif;
     color: rgb(70, 70, 70);
     font-size: 30px;
+    .texto-destaque {
+      color: #00656d;
+    }
   }
 }
 
 .quem-somos {
   background-color: #eceff1;
   display: flex;
-  font-size: 20px;
+  font-size: 23px;
   .texto-container {
     .imagem {
       background-image: url("~assets/imagens/aperto-de-mao.svg");
       background-position: center;
-      min-height: 200px;
+      min-height: 300px;
     }
   }
 }
@@ -195,8 +256,27 @@ export default {}
   }
 }
 
-.texto-destaque {
-  color: #00656d;
+.principais-categorias {
+  background-color: #f0f0f0;
+  .card-imagem {
+    .card-titulo {
+      color: rgb(241, 241, 241);
+      font-size: 25px;
+      height: 100vh;
+      text-decoration: none;
+    }
+    &:hover {
+      .card-titulo {
+        color: aliceblue;
+        font-size: 26px;
+        background-image: linear-gradient(
+          to right top,
+          rgba(172, 149, 255, 0.411),
+          rgba(0, 146, 139, 0.712)
+        );
+      }
+    }
+  }
 }
 
 /* Mobile/tela deitada */
@@ -216,7 +296,7 @@ export default {}
   }
 }
 
-/* iPad e tablet com telas maiores */
+/* iPad e tablets grandes */
 @media (min-width: 801px) {
   .container-inicial {
     background-position-y: bottom;
