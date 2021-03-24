@@ -140,11 +140,9 @@
 
                 <p>
                   Encontrou a pessoa ideal para o trampo? Parabéns! Agora é só
-                  aprovar o candidato ideal para o bico<span
-                    class="d-none d-sm-inline"
-                  >
+                  aprovar a proposta<span class="d-none d-sm-inline">
                     , nossa plataforma disponibilizará um chat para que possam
-                    conversar melhor</span>.
+                    conversar melhor e dar continuidade</span>.
                 </p>
               </div>
             </div>
@@ -190,6 +188,14 @@
               </v-img>
             </v-card>
           </v-col>
+        </v-row>
+      </v-container>
+    </v-container>
+
+    <v-container fluid class="blog">
+      <v-container class="my-5 py-5">
+        <v-row>
+          <h1>Blog</h1>
         </v-row>
       </v-container>
     </v-container>

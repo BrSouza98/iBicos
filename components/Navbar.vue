@@ -12,10 +12,12 @@
         :key="item.text"
         text
         class="d-none d-md-flex"
+        color="#006064"
+        nuxt
+        :to="`/${item.link}`"
+        exact-active-class="link-ativo"
       >
-        <nuxt-link :to="`/${item.link}`">
-          {{ item.text }}
-        </nuxt-link>
+        {{ item.text }}
       </v-btn>
 
       <v-menu bottom left>
@@ -36,10 +38,14 @@
         <v-list class="menu">
           <v-list-item v-for="item in items" :key="item.text">
             <v-list-item-title>
-              <v-btn text active-class="link-ativo">
-                <nuxt-link :to="`/${item.link}`">
-                  {{ item.text }}
-                </nuxt-link>
+              <v-btn
+                text
+                nuxt
+                :to="`/${item.link}`"
+                color="#006064"
+                exact-active-class="link-ativo"
+              >
+                {{ item.text }}
               </v-btn>
             </v-list-item-title>
           </v-list-item>
@@ -57,8 +63,8 @@ export default {
     return {
       items: [
         { text: 'Serviços disponíveis', link: 'servicos-disponiveis' },
-        { text: 'Sobre Nós', link: 'sobre' },
-        { text: 'Como funciona?', link: 'como-funciona' },
+        { text: 'Blog', link: 'blog' },
+        { text: 'Quem somos?', link: 'quem-somos' },
         { text: 'Fale Conosco', link: 'fale-conosco' }
       ]
     }
@@ -73,19 +79,22 @@ export default {
   .botao-inicio {
     font-size: 28px;
     font-weight: bolder;
+    a {
+      color: #006064;
+    }
   }
 }
 
 .menu {
   background-color: #f5fffe;
 }
-a {
-  text-decoration: none;
-  color: #006064;
-  font-weight: bold;
+
+.link-ativo {
+  color: #4329d6 !important;
 }
 
-.link-ativo{
-  color: #29d0d6;
+a {
+  text-decoration: none;
+  font-weight: bolder;
 }
 </style>
