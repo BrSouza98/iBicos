@@ -1,0 +1,34 @@
+---
+titulo: Como conseguir seu primeiro Bico!
+descricao: Chegou agora e está meio perdido? Não se preocupe, separamos um artigo super bacana para te ajudar a conseguir seu primeiro serviço aqui na plataforma.
+img: imagem-post-1.jpg
+autor: 
+    nome: Bruno Silva
+    bio: Dev e CEO da iBicos
+    img: super-brunao.jpg
+---
+
+# 1- Tenha um perfil completo.
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit orci nec condimentum hendrerit. Cras eu elit sit amet tortor euismod egestas ut ac dolor. Praesent sed metus ligula. Nullam volutpat, mi consequat rutrum sodales, est orci venenatis est, sed suscipit leo erat quis massa. Nulla ac arcu gravida, fermentum tellus id, cursus est. Nulla leo libero, luctus quis dolor tempus, bibendum vulputate orci. Mauris ut massa sit amet nibh tempor fringilla. In hac habitasse platea dictumst. Nunc bibendum, ipsum ultricies euismod hendrerit, nisi tortor laoreet ante, a mattis purus augue eu nisl. Suspendisse gravida, metus nec mattis accumsan, turpis nisl interdum erat, at facilisis sapien arcu sollicitudin ex. Nunc felis arcu, imperdiet sed facilisis et, laoreet ut enim. Sed sagittis quam quis tellus varius hendrerit. In viverra commodo libero. Duis nisl erat, tincidunt et dapibus at, dignissim ut est. Nunc magna lacus, tincidunt non faucibus eget, pulvinar eu leo.
+
+Mauris ut eros enim. Cras a convallis felis. Pellentesque ultrices sem eu vulputate pellentesque. Nam eu ligula eget leo lacinia facilisis sit amet ut massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis congue facilisis dolor, at viverra orci vulputate quis. Nullam ac pharetra ante.
+
+Proin sed purus quis orci mollis finibus nec quis mauris. Suspendisse ultricies ligula ipsum, dictum ultricies nisi eleifend quis. Donec eros orci, maximus a elit vel, eleifend finibus lacus. Fusce gravida tortor eu tristique rhoncus. Aenean quis justo tortor. Etiam eget arcu sed orci aliquam dapibus eget quis purus. Morbi lorem turpis, dapibus sit amet dui ut, scelerisque iaculis ligula. Etiam suscipit est quis augue imperdiet, quis mollis tellus ultricies. Nulla facilisi. Sed lectus elit, efficitur in libero quis, lacinia ultricies mauris. Mauris condimentum tellus mauris, non euismod mauris semper nec. Nam tincidunt velit vel purus porta, eget maximus justo mattis. Integer semper nisi sem, a tristique felis iaculis eget. Vestibulum sollicitudin enim sit amet nibh varius, ac lacinia orci tempus. In quis ullamcorper nisl, at tempus enim. 
+
+# 2 - Mantenha-se sempre atualizado
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit orci nec condimentum hendrerit. Cras eu elit sit amet tortor euismod egestas ut ac dolor. Praesent sed metus ligula. Nullam volutpat, mi consequat rutrum sodales, est orci venenatis est, sed suscipit leo erat quis massa. Nulla ac arcu gravida, fermentum tellus id, cursus est. Nulla leo libero, luctus quis dolor tempus, bibendum vulputate orci. Mauris ut massa sit amet nibh tempor fringilla. In hac habitasse platea dictumst. Nunc bibendum, ipsum ultricies euismod hendrerit, nisi tortor laoreet ante, a mattis purus augue eu nisl. Suspendisse gravida, metus nec mattis accumsan, turpis nisl interdum erat, at facilisis sapien arcu sollicitudin ex. Nunc felis arcu, imperdiet sed facilisis et, laoreet ut enim. Sed sagittis quam quis tellus varius hendrerit. In viverra commodo libero. Duis nisl erat, tincidunt et dapibus at, dignissim ut est. Nunc magna lacus, tincidunt non faucibus eget, pulvinar eu leo.
+
+Mauris ut eros enim. Cras a convallis felis. Pellentesque ultrices sem eu vulputate pellentesque. Nam eu ligula eget leo lacinia facilisis sit amet ut massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis congue facilisis dolor, at viverra orci vulputate quis. Nullam ac pharetra ante.
+
+Proin sed purus quis orci mollis finibus nec quis mauris. Suspendisse ultricies ligula ipsum, dictum ultricies nisi eleifend quis. Donec eros orci, maximus a elit vel, eleifend finibus lacus. Fusce gravida tortor eu tristique rhoncus. Aenean quis justo tortor. Etiam eget arcu sed orci aliquam dapibus eget quis purus. Morbi lorem turpis, dapibus sit amet dui ut, scelerisque iaculis ligula. Etiam suscipit est quis augue imperdiet, quis mollis tellus ultricies. Nulla facilisi. Sed lectus elit, efficitur in libero quis, lacinia ultricies mauris. Mauris condimentum tellus mauris, non euismod mauris semper nec. Nam tincidunt velit vel purus porta, eget maximus justo mattis. Integer semper nisi sem, a tristique felis iaculis eget. Vestibulum sollicitudin enim sit amet nibh varius, ac lacinia orci tempus. In quis ullamcorper nisl, at tempus enim. 
+
+# 3 - Atenção no momento da proposta!
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit orci nec condimentum hendrerit. Cras eu elit sit amet tortor euismod egestas ut ac dolor. Praesent sed metus ligula. Nullam volutpat, mi consequat rutrum sodales, est orci venenatis est, sed suscipit leo erat quis massa. Nulla ac arcu gravida, fermentum tellus id, cursus est. Nulla leo libero, luctus quis dolor tempus, bibendum vulputate orci. Mauris ut massa sit amet nibh tempor fringilla. In hac habitasse platea dictumst. Nunc bibendum, ipsum ultricies euismod hendrerit, nisi tortor laoreet ante, a mattis purus augue eu nisl. Suspendisse gravida, metus nec mattis accumsan, turpis nisl interdum erat, at facilisis sapien arcu sollicitudin ex. Nunc felis arcu, imperdiet sed facilisis et, laoreet ut enim. Sed sagittis quam quis tellus varius hendrerit. In viverra commodo libero. Duis nisl erat, tincidunt et dapibus at, dignissim ut est. Nunc magna lacus, tincidunt non faucibus eget, pulvinar eu leo.
+
+Mauris ut eros enim. Cras a convallis felis. Pellentesque ultrices sem eu vulputate pellentesque. Nam eu ligula eget leo lacinia facilisis sit amet ut massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis congue facilisis dolor, at viverra orci vulputate quis. Nullam ac pharetra ante.
+
+Proin sed purus quis orci mollis finibus nec quis mauris. Suspendisse ultricies ligula ipsum, dictum ultricies nisi eleifend quis. Donec eros orci, maximus a elit vel, eleifend finibus lacus. Fusce gravida tortor eu tristique rhoncus. Aenean quis justo tortor. Etiam eget arcu sed orci aliquam dapibus eget quis purus. Morbi lorem turpis, dapibus sit amet dui ut, scelerisque iaculis ligula. Etiam suscipit est quis augue imperdiet, quis mollis tellus ultricies. Nulla facilisi. Sed lectus elit, efficitur in libero quis, lacinia ultricies mauris. Mauris condimentum tellus mauris, non euismod mauris semper nec. Nam tincidunt velit vel purus porta, eget maximus justo mattis. Integer semper nisi sem, a tristique felis iaculis eget. Vestibulum sollicitudin enim sit amet nibh varius, ac lacinia orci tempus. In quis ullamcorper nisl, at tempus enim. 
+

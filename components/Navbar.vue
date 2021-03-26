@@ -63,7 +63,7 @@ export default {
     return {
       items: [
         { text: 'Serviços disponíveis', link: 'servicos-disponiveis' },
-        { text: 'Blog', link: 'blog' },
+        { text: 'Novidade', link: 'novidade' },
         { text: 'Quem somos?', link: 'quem-somos' },
         { text: 'Fale Conosco', link: 'fale-conosco' }
       ]
