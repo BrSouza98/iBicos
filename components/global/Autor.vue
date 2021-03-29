@@ -1,8 +1,8 @@
 <template>
   <div>
-    <img :src="require(`~/assets/imagens-blog/autores/${autor.img}`)">
+    <v-img :src="require(`~/assets/imagens-blog/autores/${autor.img}`)" class="rounded-circle" width="100px" height="100px" />
     <div>
-      <p>{{ autor.nome }}</p>
+      <h3>{{ autor.nome }}</h3>
       <p>{{ autor.bio }}</p>
     </div>
   </div>
@@ -13,15 +13,12 @@ export default {
   name: 'Autor',
   props: {
     autor: {
-      typeof: Object,
-      required: true
+      required: true,
+      typeof: Object
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-img {
-  height: 100px;
-}
 </style>

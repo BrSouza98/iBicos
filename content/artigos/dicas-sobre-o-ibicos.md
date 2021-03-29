@@ -1,7 +1,7 @@
 ---
-titulo: Como conseguir seu primeiro Bico!
+titulo: O primeiro Bico
 descricao: Chegou agora e está meio perdido? Não se preocupe, separamos um artigo super bacana para te ajudar a conseguir seu primeiro serviço aqui na plataforma.
-img: imagem-post-1.jpg
+img: homem-conversando-mecanico.jpg
 autor: 
     nome: Bruno Silva
     bio: Dev e CEO da iBicos
