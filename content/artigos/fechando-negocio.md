@@ -1,6 +1,6 @@
 ---
 titulo: Fechando negócio
-descricao: Já conseguiu encontrar um profissional? Maravilha! Então separamos um post especial apra você entender como que nossa plataforma atua nos próximos passos com um ranking de avaliação, fazendo com que ambas as partes façam o possivel para que cumpram o combinado.
+descricao: Já conseguiu encontrar um profissional? Maravilha! Então separamos um post especial apra você entender como que nossa plataforma atua nos próximos passos.
 img: homens-apertando-maos.jpg
 autor: 
     nome: Bruno Silva

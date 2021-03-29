@@ -158,14 +158,14 @@
     </v-container>
 
     <v-container fluid class="principais-categorias">
-      <v-container>
-        <v-row class="d-flex justify-center my-5 py-5">
-          <h1 class="text-center my-5 py-5">
+      <v-container class="my-10">
+        <v-row class="d-flex justify-center my-5">
+          <h1 class="text-center my-5">
             Procurando um bico?
           </h1>
         </v-row>
 
-        <v-row>
+        <v-row class="my-15">
           <v-col
             v-for="categoria in categorias"
             :key="categoria.text"
@@ -192,10 +192,64 @@
       </v-container>
     </v-container>
 
-    <v-container fluid class="blog">
+    <v-container fluid class="blog-container">
       <v-container class="my-5 py-5">
-        <v-row>
-          <h1>Blog</h1>
+        <v-row class="justify-center">
+          <h1 class="text-center">
+            Acompanhe nosso Blog
+          </h1>
+        </v-row>
+        <v-row class="my-10 justify-center">
+          <v-col
+            v-for="artigo of artigos"
+            :key="artigo.slug"
+            class="d-flex justify-center"
+            cols="12"
+            sm="12"
+            md="6"
+            lg="4"
+          >
+            <v-card class="my-10 transition-swing" width="400px" height="550px " elevation="10">
+              <v-img
+                :src="require(`~/assets/imagens-blog/${artigo.img}`)"
+                width="400px"
+                height="200px"
+              />
+
+              <div class="v-card-conteudo">
+                <v-card-title class="v-card-title">
+                  {{ artigo.titulo }}
+                </v-card-title>
+
+                <v-card-subtitle class="v-card-subtitle">
+                  {{ artigo.descricao }}
+                </v-card-subtitle>
+
+                <div class="card-action-autor">
+                  <div class="v-card-autor-data">
+                    Autor: {{ artigo.autor.nome }}
+                    <br>
+                    Data: {{ formatarData(artigo.createdAt) }}
+                  </div>
+
+                  <v-card-actions class="v-card-actions">
+                    <v-btn
+                      color="teal lighten-1"
+                      dark
+                      nuxt
+                      large
+                      :to="{
+                        name: 'postagem-slug',
+                        params: { slug: artigo.slug },
+                      }"
+                    >
+                      Leia
+                    </v-btn>
+                  </v-card-actions>
+                </div>
+              </div>
+            </v-card>
+          </v-col>
         </v-row>
       </v-container>
     </v-container>
@@ -204,6 +258,17 @@
 
 <script>
 export default {
+  async asyncData ({ $content, params }) {
+    const artigos = await $content('artigos')
+      .only(['titulo', 'createdAt', 'descricao', 'img', 'slug', 'autor'])
+      .sortBy('createdAt', 'asc')
+      .limit(3)
+      .fetch()
+
+    return {
+      artigos
+    }
+  },
   data () {
     return {
       categorias: [
@@ -214,6 +279,13 @@ export default {
         { img: 'eletricista', text: 'Eletricista' },
         { img: 'banho-e-tosa', text: 'Banho e Tosa' }
       ]
+    }
+  },
+
+  methods: {
+    formatarData (data) {
+      const opcao = { dia: 'numeric', mes: 'long', ano: 'numeric' }
+      return new Date(data).toLocaleDateString('pt', opcao)
     }
   }
 }
@@ -285,6 +357,42 @@ export default {
   }
 }
 
+.blog-container {
+  background-color: #ffffff;
+  .v-card {
+    font-size: 20px;
+
+    .v-card-conteudo {
+      height: 100%;
+      .v-card-title {
+        font-size: 1.2em;
+        word-break: inherit;
+      }
+
+      .v-card-subtitle {
+        font-size: inherit;
+        margin: 5px auto 5px auto;
+        height: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card-action-autor {
+        .v-card-autor-data {
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 0.8em;
+          font-style: italic;
+          padding: 16px;
+        }
+
+        .v-card-actions {
+          display: flex;
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}
 /* Mobile/tela deitada */
 @media (min-width: 480px) {
   .container-inicial {
