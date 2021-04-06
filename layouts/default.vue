@@ -70,6 +70,8 @@
                 max-width="150px"
                 text
                 rounded
+                nuxt
+                :to=" button.link "
               >
                 {{ button.text }}
               </v-btn>
@@ -79,7 +81,7 @@
 
         <v-row class="d-flex teal darken-4 pa-5">
           <v-col class="d-flex justify-center">
-            {{ new Date().getFullYear() }} — <strong>NTC soluções</strong>
+            {{ new Date().getFullYear() }} — &nbsp;<strong> NTC solutions</strong>
           </v-col>
         </v-row>
       </v-container>
@@ -93,10 +95,10 @@ export default {
     return {
       icons: ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram'],
       buttons: [
-        { text: 'Inicio' },
-        { text: 'Sobre' },
-        { text: 'Contatos' },
-        { text: 'Serviços' }
+        { text: 'Inicio', link: '/' },
+        { text: 'Sobre', link: 'sobre' },
+        { text: 'Contatos', link: 'fale-conosco' },
+        { text: 'Serviços', link: 'nossos-servicos' }
       ]
     }
   }
@@ -108,5 +110,13 @@ export default {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.container-rodape{
+  font-size: 15px;
+  h4{
+    font-size: 1.2em;
+    margin: 12px 0 12px 0;
+  }
 }
 </style>
