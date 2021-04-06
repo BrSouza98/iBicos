@@ -96,7 +96,7 @@ export default {
       icons: ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram'],
       buttons: [
         { text: 'Inicio', link: '/' },
-        { text: 'Sobre', link: 'sobre' },
+        { text: 'Sobre', link: 'quem-somos' },
         { text: 'Contatos', link: 'fale-conosco' },
         { text: 'Serviços', link: 'nossos-servicos' }
       ]

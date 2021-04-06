@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="novidade-container">
-    <v-container class="cards-container rounded-lg elevation-20 my-5 py-5">
+    <v-container class="cards-container my-5 py-5">
       <h1 class="text-center mt-5">
         Noticias mais recentes
       </h1>
@@ -79,9 +79,7 @@ export default {
 
 <style lang="scss" scoped>
 .novidade-container {
-  background-color: #90a4ae;
   .cards-container {
-    background-color: #ffffffe1;
     h1 {
       color: rgb(27, 35, 46);
     }

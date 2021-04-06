@@ -3,7 +3,7 @@ titulo: Fechando negócio
 descricao: Já conseguiu encontrar um profissional? Maravilha! Então separamos um post especial apra você entender como que nossa plataforma atua nos próximos passos.
 img: homens-apertando-maos.jpg
 autor: 
-    nome: Bruno Silva
+    nome: Antonio Gambogi
     bio: Dev e CEO da iBicos
     img: super-brunao.jpg
 ---

@@ -78,9 +78,9 @@ export default {
   data () {
     return {
       items: [
-        { text: 'Mural de bicos', link: 'servicos-disponiveis' },
-        { text: 'Publicar bico', link: 'novidades' },
-        { text: 'Nosso Blog', link: 'navidades' }
+        { text: 'Mural de bicos', link: 'mural-de-bicos' },
+        { text: 'Publicar bico', link: 'novo-bico' },
+        { text: 'Nosso Blog', link: 'blog' }
       ]
     }
   },

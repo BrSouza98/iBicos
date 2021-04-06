@@ -3,7 +3,7 @@ titulo: O primeiro Bico
 descricao: Chegou agora e está meio perdido? Não se preocupe, separamos um artigo super bacana para te ajudar a conseguir seu primeiro serviço aqui na plataforma.
 img: homem-conversando-mecanico.jpg
 autor: 
-    nome: Bruno Silva
+    nome: Renato Tamaio
     bio: Dev e CEO da iBicos
     img: super-brunao.jpg
 ---

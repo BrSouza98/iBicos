@@ -192,7 +192,7 @@
       </v-container>
     </v-container>
 
-    <v-container fluid class="blog-container">
+    <v-container fluid class="blog-container grey lighten-5">
       <v-container class="my-5 py-5">
         <v-row class="justify-center">
           <h1 class="text-center">

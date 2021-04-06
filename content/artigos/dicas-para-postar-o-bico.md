@@ -3,7 +3,7 @@ titulo: Melhorando sua postagem
 descricao: Você posta o bico e a vaga fica lá... Parada por muuuito tempo... Ai não né? Confia aqui algumas dicas que podem te ajudar no momento de postar o seu bico!!
 img: homem-mechendo-painel.jpg
 autor: 
-    nome: Bruno
+    nome: Bruno Silva
     bio: Dev e CEO da iBicos
     img: super-brunao.jpg
 ---
