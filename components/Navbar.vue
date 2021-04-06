@@ -16,11 +16,18 @@
         nuxt
         :to="`/${item.link}`"
         exact-active-class="link-ativo"
+        large
       >
         {{ item.text }}
       </v-btn>
 
-      <v-menu bottom left>
+      <v-btn large rounded color="deep-purple darken-3" class="d-none d-md-flex" dark>
+        <v-icon class="mx-1">
+          mdi-account
+        </v-icon> Minha conta
+      </v-btn>
+
+      <v-menu transition="scroll-x-reverse-transition" bottom left>
         <template #activator="{ on, attrs }">
           <v-btn
             class="d-flex d-md-none"
@@ -44,10 +51,19 @@
                 :to="`/${item.link}`"
                 color="#006064"
                 exact-active-class="link-ativo"
+                block
               >
                 {{ item.text }}
               </v-btn>
             </v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-btn color="#6327AD" block dark>
+              <v-icon class="mx-1">
+                mdi-account
+              </v-icon> Minha conta
+            </v-btn>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -62,10 +78,9 @@ export default {
   data () {
     return {
       items: [
-        { text: 'Serviços disponíveis', link: 'servicos-disponiveis' },
-        { text: 'Novidades', link: 'novidades' },
-        { text: 'Quem somos?', link: 'quem-somos' },
-        { text: 'Fale Conosco', link: 'fale-conosco' }
+        { text: 'Mural de bicos', link: 'servicos-disponiveis' },
+        { text: 'Publicar bico', link: 'novidades' },
+        { text: 'Nosso Blog', link: 'navidades' }
       ]
     }
   },
