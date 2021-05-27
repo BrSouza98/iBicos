@@ -1,6 +1,6 @@
 <template>
   <div>
-    Página sobre fale conosco.
+    Página sobre fale conosco.dasdassda
   </div>
 </template>
 
