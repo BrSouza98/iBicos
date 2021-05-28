@@ -4,7 +4,7 @@
       Preencha os campos para criar sua conta
     </h1>
     <v-col cols="6" class="mx-auto">
-      <v-form ref="form" v-model="valid" lazy-validation class="justify-center my-10 py-0">
+      <v-form ref="form" v-model="valid" lazy-validation class="justify-center my-10 py-0" method="POST">
         <v-text-field
           v-model="email"
           :counter="40"

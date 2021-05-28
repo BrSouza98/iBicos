@@ -139,7 +139,6 @@
         action="http://localhost/app/enviaremail.php"
         lazy-validation
         class="justify-center my-10 py-0"
-        style="border: 1px solid red;"
         method="POST"
       >
         <v-text-field
