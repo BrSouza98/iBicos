@@ -6,10 +6,10 @@
                <v-col cols="6" class="mx-auto">
      <v-form ref="form" v-model="valid" lazy-validation class="justify-center my-10 py-0">
       <v-text-field
-        v-model="name"
+        v-model="email"
         :counter="40"
-        :rules="nameRules"
-        label="Nome"
+        :rules="emailRules"
+        label="E-mail"
         required
       ></v-text-field>
 
@@ -49,7 +49,7 @@ export default {
     valid: true,
     name: '',
     nameRules: [
-      v => !!v || 'Digite o seu nome',
+      v => !!v || 'Digite o seu E-mail',
       v => (v && v.length <= 30) || 'Name must be less than 10 characters'
     ],
     email: '',
