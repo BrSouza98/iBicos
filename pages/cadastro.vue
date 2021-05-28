@@ -1,45 +1,47 @@
 <template>
   <div>
-            <h1 class="text-center py-10">
-              Preencha os campos para criar sua conta
-            </h1>
-               <v-col cols="6" class="mx-auto">
-     <v-form ref="form" v-model="valid" lazy-validation class="justify-center my-10 py-0">
-      <v-text-field
-        v-model="email"
-        :counter="40"
-        :rules="emailRules"
-        label="E-mail"
-        required
-      ></v-text-field>
+    <h1 class="text-center py-10">
+      Preencha os campos para criar sua conta
+    </h1>
+    <v-col cols="6" class="mx-auto">
+      <v-form ref="form" v-model="valid" lazy-validation class="justify-center my-10 py-0">
+        <v-text-field
+          v-model="email"
+          :counter="40"
+          :rules="emailRules"
+          label="E-mail"
+          required
+          name="email"
+        />
 
-            <v-text-field
-        v-model="senha"
-                :counter="12"
-        :rules="passwordRules"
-        label="Senha"
-        required
-      ></v-text-field>
+        <v-text-field
+          v-model="password"
+          :counter="12"
+          :rules="passwordRules"
+          label="Senha"
+          required
+          name="senha"
+        />
 
-      <v-checkbox
-        v-model="checkbox"
-        :rules="[v => !!v || 'You must agree to continue!']"
-        label="Aceita os termos de uso?"
-        required
-      ></v-checkbox>
+        <v-checkbox
+          v-model="checkbox"
+          :rules="[v => !!v || 'You must agree to continue!']"
+          label="Aceita os termos de uso?"
+          required
+        />
 
-      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">
-        Enviar
-      </v-btn>
+        <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">
+          Enviar
+        </v-btn>
 
-      <v-btn color="error" class="mr-4" @click="reset">
-        Limpar
-      </v-btn>
-    </v-form>
-               </v-col>
-                           <p class="text-center py-10">
-              Cadastre-se no ibicos é gratuito e fácil de usar, <a href="/criarconta">clique aqui</a>.
-            </p>
+        <v-btn color="error" class="mr-4" @click="reset">
+          Limpar
+        </v-btn>
+      </v-form>
+    </v-col>
+    <p class="text-center py-10">
+      Cadastre-se no ibicos é gratuito e fácil de usar, <a href="/criarconta">clique aqui</a>.
+    </p>
   </div>
 </template>
 
@@ -50,17 +52,16 @@ export default {
     name: '',
     nameRules: [
       v => !!v || 'Digite o seu E-mail',
-      v => (v && v.length <= 30) || 'Name must be less than 10 characters'
+      v => (v && v.length <= 30) || 'Email deve ser menor que 30 caracteres!'
     ],
     email: '',
     emailRules: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+      v => !!v || 'Campo email obrigatório',
+      v => /.+@.+\..+/.test(v) || 'Email invalido'
     ],
     telephone: '',
     telephoneRules: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+      v => !!v || 'Campo telefone é obrigatório'
     ],
     password: '',
     passwordRules: [

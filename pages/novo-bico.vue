@@ -84,10 +84,9 @@
                   Assim que postado, seu bico vai para o topo da lista! Todos os
                   prestadores de serviço disponiveis poderão se candidatar
                   <span
-                  class="d-none d-sm-inline"
-                    >enviando o tempo, experiencias com qual cumprira o bico,
-                    isso claro, sendo compátiveis com a média estipulada</span
-                  >.
+                    class="d-none d-sm-inline"
+                  >enviando o tempo, experiencias com qual cumprira o bico,
+                    isso claro, sendo compátiveis com a média estipulada</span>.
                 </p>
               </div>
 
@@ -116,8 +115,7 @@
                   Encontrou a pessoa ideal para o trampo? Parabéns! Agora é só
                   aprovar a proposta<span class="d-none d-sm-inline">
                     , nossa plataforma disponibilizará um chat para que possam
-                    conversar melhor e dar continuidade</span
-                  >.
+                    conversar melhor e dar continuidade</span>.
                 </p>
               </div>
             </div>
@@ -131,50 +129,43 @@
         </v-row>
       </v-container>
     </v-container>
-            <h1 class="text-center py-10">
-              Preencha o formulário para publicar o seu bico!
-            </h1>
-               <v-col cols="6" class="mx-auto">
-     <v-form ref="form" v-model="valid" lazy-validation class="justify-center my-10 py-0">
-      <v-text-field
-        v-model="name"
-        :counter="40"
-        :rules="nameRules"
-        label="Nome"
-        required
-      ></v-text-field>
+    <h1 class="text-center py-10">
+      Precisando de ajuda? Deixe-nos uma mensagem!
+    </h1>
+    <v-col cols="6" class="mx-auto">
+      <v-form
+        ref="form"
+        v-model="valid"
+        action="http://localhost/app/enviaremail.php"
+        lazy-validation
+        class="justify-center my-10 py-0"
+        style="border: 1px solid red;"
+        method="POST"
+      >
+        <v-text-field
+          v-model="email"
+          name="email"
+          :rules="emailRules"
+          label="Email"
+          required
+        />
 
-      <v-text-field
-        v-model="email"
-        :rules="emailRules"
-        label="E-mail"
-        required
-      ></v-text-field>
+        <v-textarea
+          name="mensagem"
+          label="Mensagem"
+          value="Alguma dúvida? Estamos a disposição!"
+          hint="Hint text"
+        />
 
-      <v-select
-        v-model="select"
-        :items="items"
-        :rules="[v => !!v || 'Item is required']"
-        label="Bico"
-        required
-      ></v-select>
+        <v-btn :disabled="!valid" type="subimit" color="success" class="mr-4" @click="validate">
+          Enviar
+        </v-btn>
 
-      <v-checkbox
-        v-model="checkbox"
-        :rules="[v => !!v || 'You must agree to continue!']"
-        label="Aceita os termos de uso?"
-        required
-      ></v-checkbox>
-
-      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">
-        Enviar
-      </v-btn>
-
-      <v-btn color="error" class="mr-4" @click="reset">
-        Limpar
-      </v-btn>
-    </v-form>
-               </v-col>
+        <v-btn color="error" class="mr-4" @click="reset">
+          Limpar
+        </v-btn>
+      </v-form>
+    </v-col>
   </div>
 </template>
 
@@ -182,19 +173,11 @@
 export default {
   data: () => ({
     valid: true,
-    name: '',
-    nameRules: [
-      v => !!v || 'Name is required',
-      v => (v && v.length <= 30) || 'Name must be less than 10 characters'
-    ],
     email: '',
     emailRules: [
       v => !!v || 'E-mail is required',
       v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
-    ],
-    select: null,
-    items: ['Pintura', 'Faxina', 'Pedreiro', 'Encanador', 'Eletricista', 'Banho e tosa'],
-    checkbox: false
+    ]
   }),
 
   methods: {
