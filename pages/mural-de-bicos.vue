@@ -6,7 +6,10 @@
             Bem-vindo ao mural de bicos
           </h1>
         </v-row>
-
+<div class="text-center">
+    <p>Aqui estão as categorias de bicos oferecidos pelos nosso serviços do Ibicos, onde você irá encontrar o seu bico com mais facilidade do que nunca!</p>
+    <p>Está esparando oque? Vamos botar a mão na massa!</p>
+</div>
         <v-row class="my-15">
           <v-col
             v-for="categoria in categorias"

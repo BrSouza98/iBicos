@@ -134,7 +134,7 @@
             <h1 class="text-center py-10">
               Preencha o formulário para publicar o seu bico!
             </h1>
-               <v-col cols="12">
+               <v-col cols="6" class="mx-auto">
      <v-form ref="form" v-model="valid" lazy-validation class="justify-center my-10 py-0">
       <v-text-field
         v-model="name"
