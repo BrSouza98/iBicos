@@ -21,10 +21,17 @@
         {{ item.text }}
       </v-btn>
 
-      <v-btn large rounded color="deep-purple darken-3" class="d-none d-md-flex" dark>
+      <v-btn
+      large
+      rounded
+      color="deep-purple darken-3"
+      class="d-none d-md-flex"
+      dark
+      nuxt
+      to='/cadastro'>
         <v-icon class="mx-1">
           mdi-account
-        </v-icon> Minha conta
+        </v-icon>minha conta
       </v-btn>
 
       <v-menu transition="scroll-x-reverse-transition" bottom left>
@@ -59,7 +66,7 @@
           </v-list-item>
 
           <v-list-item>
-            <v-btn color="#6327AD" block dark>
+            <v-btn color="#6327AD" block dark  nuxt to="/cadastro">
               <v-icon class="mx-1">
                 mdi-account
               </v-icon> Minha conta
