@@ -14,13 +14,13 @@
       <v-row class="botoes ma-3">
         <v-col cols="12">
           <v-btn large color="#00656D" medium>
-            <span style="color: #fff">Buscar bicos</span>
+            <span style="color: #fff">Mural de bicos</span>
           </v-btn>
         </v-col>
 
         <v-col>
           <v-btn large outlined medium>
-            Postar bicos
+            Publicar bicos
           </v-btn>
         </v-col>
       </v-row>
